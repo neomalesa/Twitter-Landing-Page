@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+header button{
+   display: flex;
+
+}
+header svg{
+    width: 32px;
+    height: 32px;
+}
