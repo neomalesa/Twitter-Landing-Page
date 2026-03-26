@@ -1,17 +1,167 @@
-body{
+* {
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box; /* Ensures padding doesn't break widths */
+}
+
+body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 }
-.main-content{
+
+/* --- LEFT SIDEBAR (HEADER) --- */
+header {
+    width: 275px;
+    height: 100vh; /* Takes up full screen height */
+    padding: 0 12px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Pushes the profile button to the bottom */
+    position: sticky;
+    top: 0;
 }
 
-header button{
-   display: flex;
-
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
 }
-header svg{
-    width: 32px;
-    height: 32px;
+
+/* The Top X Logo */
+.main-content > svg:first-child {
+    width: 30px;
+    height: 30px;
+    margin: 16px 12px;
+    fill: black;
+}
+
+/* Navigation Buttons */
+.main-content button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 9999px; /* Creates the pill-shaped hover effect */
+    padding: 12px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    width: max-content; /* Only takes up as much space as the content */
+    transition: background-color 0.2s;
+}
+
+.main-content button:hover {
+    background-color: #e7e7e8; /* Twitter's light gray hover color */
+}
+
+/* Icons inside the buttons */
+.main-content button svg {
+    width: 26px;
+    height: 26px;
+    fill: black;
+}
+
+/* Text inside the buttons */
+.main-content button p {
+    margin: 0; /* Removes default paragraph spacing */
+    margin-left: 20px; /* Space between icon and text */
+    margin-right: 16px;
+    font-size: 20px;
+    color: black;
+}
+
+/* Makes 'Home' and 'Explore' bold like your screenshot */
+.main-content button:nth-child(2) p,
+.main-content button:nth-child(3) p {
+    font-weight: 700;
+}
+
+/* The Big Post Button */
+.post-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    width: 90%;
+    min-height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-left: 12px;
+}
+
+.post-button p {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.post-button:hover {
+    background-color: rgb(39, 44, 48);
+}
+
+/* --- BOTTOM PROFILE BUTTON --- */
+.profile-button {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+.profile-button:hover {
+    background-color: #e7e7e8;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    flex-grow: 1; /* Pushes the 3-dots icon to the far right */
+}
+
+.user-details h4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+.user-details p {
+    margin: 0;
+    font-size: 15px;
+    color: #536471;
+}
+
+/* The 3 dots icon */
+.profile-button > svg {
+    width: 18px;
+    height: 18px;
+    fill: black;
+}
+
+/* --- CORE LAYOUT TO KEEP THE REST OF YOUR PAGE INTACT --- */
+.main-feed {
+    width: 600px;
+    border-left: 1px solid #eff3f4;
+    border-right: 1px solid #eff3f4;
+    min-height: 100vh;
+}
+
+.right-sidebar {
+    width: 350px;
 }
