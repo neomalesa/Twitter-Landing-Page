@@ -1,7 +1,7 @@
 # Twitter-Landing-Page
 
 
-##The Core Layout & Sidebar Navigation
+## The Core Layout & Sidebar Navigation
 
 Flexible Grid System: I bypassed traditional grid frameworks and built the core architecture entirely with CSS Flexbox. The body acts as the main flex container, perfectly balancing the left navigation sidebar, the central feed, and the right trends sidebar.
 
@@ -10,7 +10,7 @@ Sticky Positioning: I utilized position: sticky on both the left and right sideb
 
 
 
-##The Main Feed & Media Integration
+## The Main Feed & Media Integration
 
 Flexible Widths: The .main-feed container utilizes a width: 100% paired with a max-width: 600px. This approach allows the feed to act as the primary column on desktops while seamlessly shrinking to fill the entire screen on mobile devices without causing horizontal scrollbars.
 
@@ -18,7 +18,7 @@ Embedded Video Corrections: Official Twitter video embeds (iframe and .twitter-t
 
 
 
-##The Right Sidebar & Search
+## The Right Sidebar & Search
 
 Visual Hierarchy: I implemented the search bar was to match twitter's bar. 
 
@@ -26,7 +26,7 @@ Component Design: The "Today's News", "What's Happening", and "Who to Follow" se
 
 
 
-##Advanced Responsive Breakpoints (Media Queries)
+## Advanced Responsive Breakpoints (Media Queries)
 
 Instead of relying on a library, I wrote custom @media queries to orchestrate a complex, three-stage layout morph:
 
@@ -36,7 +36,7 @@ Mobile View (max-width: 680px): The left sidebar entirely detaches from the docu
 
 
 
-##The "DIY" Custom feature Dark Mode Toggle
+## The "DIY" Custom feature Dark Mode Toggle
 
 I implemented a fully custom Dark Mode engine triggered by a floating action moonlight button.
 
@@ -47,15 +47,15 @@ To bring the static UI to life, I utilized Cursor AI to assist in writing the lo
 
 
 
-#The Splash Screen ("Splashback")
+# The Splash Screen (one the shows 
 
 To mimic the feel of a native mobile application, the site features a custom loading splash screen. A full-screen black overlay with the X logo covers the DOM on initial load. 
 
 
 
-#Live Tweet Injection & Dynamic Stats: The compose box at the top of the feed simulates a live database connection.
+# Live Tweet Injection & Dynamic Stats: The compose box at the top of the feed simulates a live database connection.
 
 The "Post" button dynamically enables/disables based on the input field's length.
 
 To make the clone feel "alive," a background interval function runs every 30 seconds, randomly incrementing the views, likes, and reposts on the newly created live tweets to mimic engagements. Although still needs to be fixed.
->>>>>>> 32258bc97ba07efaa74d387b2c27851ae2181e81
+
