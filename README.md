@@ -1,12 +1,6 @@
 # Twitter-Landing-Page
 
 
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 32258bc97ba07efaa74d387b2c27851ae2181e81
 ##The Core Layout & Sidebar Navigation
 
 Flexible Grid System: I bypassed traditional grid frameworks and built the core architecture entirely with CSS Flexbox. The body acts as the main flex container, perfectly balancing the left navigation sidebar, the central feed, and the right trends sidebar.
@@ -63,8 +57,5 @@ To mimic the feel of a native mobile application, the site features a custom loa
 
 The "Post" button dynamically enables/disables based on the input field's length.
 
-<<<<<<< HEAD
-To make the clone feel "alive," a background interval function runs every 30 seconds, randomly incrementing the views, likes, and reposts on the newly created live tweets to mimic engagements. Although still needs to be fixed.
-=======
 To make the clone feel "alive," a background interval function runs every 30 seconds, randomly incrementing the views, likes, and reposts on the newly created live tweets to mimic engagements. Although still needs to be fixed.
 >>>>>>> 32258bc97ba07efaa74d387b2c27851ae2181e81
